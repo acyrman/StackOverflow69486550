@@ -9,11 +9,19 @@ import UIKit
 
 class ViewController: UIViewController {
 
+  @IBOutlet weak var collectionView: UICollectionView!
+
+  let cars: [Cars] = Cars.generateData()
+  var selectedCar: Cars?
+
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view.
+
+    configureCollectionView()
   }
 
-
+  private func configureCollectionView() {
+    collectionView.dataSource = self
+    collectionView.delegate = self
+  }
 }
-

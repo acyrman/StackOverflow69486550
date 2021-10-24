@@ -13,6 +13,11 @@
 		2B71F53A27252D9F004A5063 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B71F53827252D9F004A5063 /* Main.storyboard */; };
 		2B71F53C27252DA0004A5063 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B71F53B27252DA0004A5063 /* Assets.xcassets */; };
 		2B71F53F27252DA0004A5063 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B71F53D27252DA0004A5063 /* LaunchScreen.storyboard */; };
+		2B71F5482725321A004A5063 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B71F5472725321A004A5063 /* CollectionViewCell.swift */; };
+		2B71F54A272532D0004A5063 /* Cars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B71F549272532D0004A5063 /* Cars.swift */; };
+		2B71F54C27253A92004A5063 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B71F54B27253A92004A5063 /* TableViewCell.swift */; };
+		2B71F54E27253E8A004A5063 /* ViewController+TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B71F54D27253E8A004A5063 /* ViewController+TableViewDataSource.swift */; };
+		2B71F55027253EF7004A5063 /* ViewController+CollectionViewStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B71F54F27253EF7004A5063 /* ViewController+CollectionViewStuff.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		2B71F53B27252DA0004A5063 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B71F53E27252DA0004A5063 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B71F54027252DA0004A5063 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B71F5472725321A004A5063 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		2B71F549272532D0004A5063 /* Cars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cars.swift; sourceTree = "<group>"; };
+		2B71F54B27253A92004A5063 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		2B71F54D27253E8A004A5063 /* ViewController+TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+TableViewDataSource.swift"; sourceTree = "<group>"; };
+		2B71F54F27253EF7004A5063 /* ViewController+CollectionViewStuff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+CollectionViewStuff.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +69,15 @@
 				2B71F53227252D9F004A5063 /* AppDelegate.swift */,
 				2B71F53427252D9F004A5063 /* SceneDelegate.swift */,
 				2B71F53627252D9F004A5063 /* ViewController.swift */,
+				2B71F54F27253EF7004A5063 /* ViewController+CollectionViewStuff.swift */,
+				2B71F54D27253E8A004A5063 /* ViewController+TableViewDataSource.swift */,
 				2B71F53827252D9F004A5063 /* Main.storyboard */,
 				2B71F53B27252DA0004A5063 /* Assets.xcassets */,
 				2B71F53D27252DA0004A5063 /* LaunchScreen.storyboard */,
 				2B71F54027252DA0004A5063 /* Info.plist */,
+				2B71F5472725321A004A5063 /* CollectionViewCell.swift */,
+				2B71F54B27253A92004A5063 /* TableViewCell.swift */,
+				2B71F549272532D0004A5063 /* Cars.swift */,
 			);
 			path = "SO 69486550";
 			sourceTree = "<group>";
@@ -140,7 +155,12 @@
 			files = (
 				2B71F53727252D9F004A5063 /* ViewController.swift in Sources */,
 				2B71F53327252D9F004A5063 /* AppDelegate.swift in Sources */,
+				2B71F54A272532D0004A5063 /* Cars.swift in Sources */,
+				2B71F54C27253A92004A5063 /* TableViewCell.swift in Sources */,
+				2B71F55027253EF7004A5063 /* ViewController+CollectionViewStuff.swift in Sources */,
+				2B71F5482725321A004A5063 /* CollectionViewCell.swift in Sources */,
 				2B71F53527252D9F004A5063 /* SceneDelegate.swift in Sources */,
+				2B71F54E27253E8A004A5063 /* ViewController+TableViewDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +317,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,7 +327,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -325,6 +346,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -334,7 +356,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
